@@ -1,0 +1,38 @@
+body {
+	background-color: #030305;
+	color: #F7F7F8;
+}
+
+#team-name-footer {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+.form {
+	position: absolute;
+    top: 500px;
+    left: 500px;
+}
+
+.title {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+}
+
+.form-button {
+	padding: 10px 20px 10px 20px;
+	margin: 20px;
+	color: white;
+	border-style: solid;
+	border-radius: 15px;
+	border-color: #F7F7F8;
+	border-width: 0.5px;
+	background-color: transparent;
+}
+
+.submit-button {
+	background-color: white;
+	color: black;
+}
