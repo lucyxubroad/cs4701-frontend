@@ -5,10 +5,7 @@ body {
 }
 
 .form {
-	/* position: absolute; */
-    /* top: 500px;
-	left: 500px; */
-	margin-top: 200px;
+	margin-top: 50px;
 	margin-left: 80px;
 }
 
@@ -57,6 +54,12 @@ body {
 	top: 50px;
 	left: 600px;
 	background-color: white;
+}
+
+.generated-waveform {
+	height: 300px;
+	text-align: right;
+	padding: 20px;
 }
 
 #team-name-footer {
