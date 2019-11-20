@@ -3,9 +3,13 @@
 <head>
 	<title>Home</title>
 	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-	<header class="title">music genre predictor</header>
+	<header class="header">
+		<p class="title">Music Genre Predictor</p>
+		<p class="subtitle">Upload an MP3 file and let us predict its genre!</p>
+	</header>
 
 	{% with messages = get_flashed_messages() %}
 	  {% if messages %}
@@ -17,11 +21,25 @@
 	  {% endif %}
 	{% endwith %}
 
+	<form class="form" method="post" action="/" enctype="multipart/form-data">
+		<input class="form-button" type="file" name="file" autocomplete="off" required>
+		<input class="form-button submit-button" type="submit" value="Submit">
+	</form>
+
+	<div class="output">
+		{% if name %}
+		<p><img src="{{name}}"></p>
+		{% else %}
+		<p></p>
+		{% endif %}
+	</div>
+
+	{% if message %}
+	<div id="team-name-footer">{message}</div>
+	{% else %}
 	<div id="team-name-footer">brought to you by GenreGen</div>
+	{% endif %}
+
 </body>
 
-<form class="form" method="post" action="/" enctype="multipart/form-data">
-	<input class="form-button" type="file" name="file" autocomplete="off" required>
-	<input class="form-button submit-button" type="submit" value="Submit">
-</form>
 </html>

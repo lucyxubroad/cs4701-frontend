@@ -1,24 +1,36 @@
 body {
-	background-color: #030305;
+	background-color: #474C5F;
 	color: #F7F7F8;
-}
 
-#team-name-footer {
-	position: absolute;
-	bottom: 20px;
-	right: 20px;
 }
 
 .form {
-	position: absolute;
-    top: 500px;
-    left: 500px;
+	/* position: absolute; */
+    /* top: 500px;
+	left: 500px; */
+	margin-top: 200px;
+	margin-left: 80px;
+}
+
+.header {
+	margin-top: 100px;
+	margin-left: 100px;
 }
 
 .title {
-	position: absolute;
-	top: 40px;
-	left: 40px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 24px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.subtitle {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	color: #989AAD;
+	font-family: 'Roboto', sans-serif;
 }
 
 .form-button {
@@ -35,4 +47,22 @@ body {
 .submit-button {
 	background-color: white;
 	color: black;
+}
+
+.output {
+	border-radius: 30px;
+	position: absolute;
+	right: 50px;
+	bottom: 50px;
+	top: 50px;
+	left: 600px;
+	background-color: white;
+}
+
+#team-name-footer {
+	position: absolute;
+	bottom: 20px;
+	right: 50px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
 }
