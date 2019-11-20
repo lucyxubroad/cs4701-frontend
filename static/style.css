@@ -54,12 +54,30 @@ body {
 	top: 50px;
 	left: 600px;
 	background-color: white;
+	color: black;
+}
+
+.output-content {
+	padding: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.results-header {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: #474C5F;
+}
+
+.results-subheader {
+	font-family: 'Roboto', sans-serif;
+	color: #989AAD;
+	font-size: 12px;
 }
 
 .generated-waveform {
 	height: 300px;
 	text-align: right;
-	padding: 20px;
+	/* padding: 20px; */
 }
 
 #team-name-footer {

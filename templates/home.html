@@ -27,11 +27,18 @@
 	</form>
 
 	<div class="output">
-		{% if name %}
-		<p><img class="generated-waveform" src="{{name}}"></p>
-		{% else %}
-		<p></p>
-		{% endif %}
+		<div class="output-content">
+			<h2 class="results-header">Results Summary</h2>
+			<p class="results-subheader">Below is the waveform classification output summary.</p>
+			<p>MP3 File Name: </p>
+			<p>Converted Waveform Image</p>
+			{% if name %}
+			<p><img class="generated-waveform" src="{{name}}"></p>
+			{% else %}
+			<p></p>
+			{% endif %}
+			<p>Output</p>
+		</div>
 	</div>
 
 	{% if message %}
